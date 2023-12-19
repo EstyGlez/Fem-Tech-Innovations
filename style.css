@@ -1,0 +1,18 @@
+.wraper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+   
+}
+.navbar {
+    background-color: aqua;
+}
+
+.content {
+    flex: 1 1 auto;
+    background-color: blueviolet;
+}
+.footbar {
+    background-color: aqua;
+}
