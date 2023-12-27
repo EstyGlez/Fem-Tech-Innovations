@@ -8,8 +8,72 @@
 
 
 /*--------------------------------NAVEGATOR---------------------------*/
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #F4DFC8;
+
+
+
+}
+
 .navbar {
-    background-color: aqua; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+
+.navbarright {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+   
+}
+
+.shipping {
+    text-align: center;
+    background-color: #F6E7cf;
+    text-align: center;
+    background-color: #F6E7cf;
+    transition: background-color 0.4 ease-in-out;
+}
+
+
+
+.shipping:hover {
+    text-align: center;
+    background-color: black;
+    transform: scale(1.1);
+}
+
+.Envío_gratis:hover {
+    color: #F6E7cf;
+    transform: scale(1.1);
+
+}
+
+#userImage {
+    height: 30px;
+    width: 35px;
+
+}
+
+#userModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+
+}
+
+
+#userImage:hover+#userModal {
+    display: block;
 }
 
 
