@@ -9,6 +9,18 @@
 
 /*--------------------------------NAVEGATOR---------------------------*/
 
+.enlace-personalizado {
+    color: #010102; 
+    text-decoration: underline; 
+    cursor: pointer; 
+    margin-right: 8px;
+  }
+
+  .enlace-personalizado:hover {
+    color: #0056b3;
+
+  }
+
 nav {
     display: flex;
     flex-direction: column;
