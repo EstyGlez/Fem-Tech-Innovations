@@ -67,9 +67,20 @@ nav {
 
 }
 
+#lang{
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    
+}
+
+#lang:hover+#userModal {
+    display: block;
+}
+
 #userImage {
-    height: 30px;
-    width: 35px;
+    height: 20px;
+    width: 20px;
 
 }
 
@@ -99,6 +110,12 @@ nav {
     grid-template-rows: 450px 150px 1fr;
     gap: 5px;
 }
+
+#shop {
+    height: 20px;
+    width: 20px;
+}
+
 
 /*---------GRIT----------*/
 
