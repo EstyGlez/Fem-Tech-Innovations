@@ -30,6 +30,19 @@ nav {
 
 }
 
+#logfem{
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+
+}
+
+.Fem-tech{
+    display: flex;
+    flex-direction: row;
+
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -99,9 +112,24 @@ nav {
     display: block;
 }
 
+.cart-content {
+    display: none;
+    position: fixed;
+   top: 22%;
+   right: -10%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    
+  }
+
+  .show-cart:hover .cart-content {
+    display: block;
+  }
+
 #shop {
     height: 20px;
     width: 20px;
+    margin-top: -8px;
 }
 
 /*-----------------------------Parte principal------------------------*/
