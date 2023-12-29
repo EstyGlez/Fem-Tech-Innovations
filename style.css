@@ -29,10 +29,10 @@ nav {
 }
 
 #logfem {
-    height: 31px;
-    width: 35px;
+    height: 50px;
+    width: 50px;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 4px;
     
 
 }
@@ -115,8 +115,8 @@ nav {
 #userImage {
     height: 20px;
     width: 20px;
-    margin-left: 9px;
-    margin-right: 9px;
+    margin-left: 6px;
+    margin-right: 6px;
 
 }
 
