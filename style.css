@@ -9,14 +9,14 @@
 
 /*--------------------------------NAVEGATOR---------------------------*/
 
-.enlace-personalizado {
+.description {
     color: #010102;
     text-decoration: underline;
     cursor: pointer;
     margin-right: 8px;
 }
 
-.enlace-personalizado:hover {
+.description:hover {
     color: #0056b3;
 
 }
@@ -106,7 +106,7 @@ nav {
 
 }
 
-#lang:hover+#userModal {
+#lang:hover+#language {
     display: block;
 }
 
