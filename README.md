@@ -26,4 +26,4 @@ Este proyecto es una Landing page construida con HTML, CSS y utiliza Bootstrap p
 1. Clona este repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/FEM-TECH-INNOVATIONS-Website.git
+   git clone https://github.com/EstyGlez/Fem-Tech-Innovations.git
