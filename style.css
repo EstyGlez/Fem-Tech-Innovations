@@ -22,6 +22,7 @@
 }
 
 nav {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     background-color: #F4DFC8;
@@ -33,7 +34,7 @@ nav {
     width: 50px;
     margin-left: 10px;
     margin-top: 4px;
-    
+
 
 }
 
@@ -79,15 +80,23 @@ nav {
     display: block;
 }
 
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
 .shipping {
     text-align: center;
     background-color: #F6E7cf;
     text-align: center;
-    background-color: #F6E7cf;
     transition: background-color 0.4 ease-in-out;
 }
 
-
+#btn-filter {
+    display: none;
+}
 
 .shipping:hover {
     text-align: center;
@@ -117,6 +126,7 @@ nav {
     width: 20px;
     margin-left: 6px;
     margin-right: 6px;
+
 
 }
 
@@ -158,41 +168,44 @@ nav {
 
 /*-----------------------------Parte principal------------------------*/
 .content {
-    height: 1200px;
-    background-color: blueviolet;
+    height: 100%;
     display: grid;
-    grid-template-columns: 250px 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 25% 1fr;
+    background-color: #F4DFC8;
+    grid-template-rows: 50% 50%;
+
+
 
 }
 
 /*---------GRIT----------*/
 
 .sidebar {
-    background-color: rgb(46, 46, 199);
-    grid-area: 1/1/3/2;
+    background-color: #F4DFC8;
+    grid-area: 1/1/1/2;
 }
 
 .carousel {
-    background-color: aquamarine;
-    grid-area: 1/2/2/3;
+    background-color: #F4DFC8;
+    grid-area: 1/2;
+    margin-top: 5px;
 }
 
 .promotion {
-    background-color: rgb(231, 101, 101);
-    grid-area: 2/2/3/3;
+    background-color: #F4DFC8;
+    grid-area: 2/2;
+    margin-top: 5px;
+
 }
 
-.products {
-    background-color: rgb(8, 2, 8);
-    grid-area: 3/1/4/3;
-}
 
 
 
 /*---------------------------SideBar-------------------------------*/
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     background-color: #F4DFC8;
 }
@@ -348,19 +361,285 @@ nav {
 
 
 /*-----------------------------FOOTER------------------------------*/
+.footer {
+    background-color: #F6E7cf;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .footbar {
-    background-color: #F4DFC8;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.contactacn {
+    color: #333;
+    cursor: pointer;
+    text-decoration: underline;
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
+    align-content: space-between;
+    margin-left: 20px;
+}
+
+.politicaprivacidad {
+    color: #333;
+    cursor: pointer;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin-left: 20px;
+}
+
+.popup1 {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.contactacn:hover .popup1 {
+    display: block;
+}
+
+.politicaprivacidad:hover .popup1 {
+    display: block;
+}
+
+.icons1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 i {
-    font-size: 70px;
-    color: #000000;  
+    font-size: 50px;
+    color: #000000;
     padding: 15px;
 }
 
+.icons a {
+    margin-right: 20px;
+    font-size: 36px;
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.rating input:checked~label {
+    color: gold;
+}
+
+.resp {
+    margin-right: 20px;
+}
+
+.submenupago {
+    display: flex;
+    float: center;
+    border: 1px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+
+    .content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        grid-area: 1, 1;
+    }
+
+
+    .carousel {
+        grid-area: 1, 2;
+
+    }
+
+    .promotion {
+        grid-area: 2, 2;
+
+
+    }
+
+    #filter-form {
+        display: none;
+    }
+
+    #filter:hover #filter-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-filter_img {
+        display: block;
+
+
+    }
+
+    .title-label {
+        display: none;
+
+    }
+
+    .container__holder_item {
+        display: none;
+
+    }
+
+    .container__holder {
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .navbarright {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .cart-content {
+        top: 30%;
+        right: -10%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        grid-area: 1, 1;
+    }
+
+    .carousel {
+        grid-area: 1, 2;
+    }
+
+    .promotion {
+        grid-area: 2, 2;
+    }
+
+    .img_phone {
+        display: none;
+    }
+
+    .img_icon {
+        margin: 10px auto;
+        height: 20px !important;
+    }
+
+    #filter {
+        display: none;
+    }
+
+    /*#filter-form {
+        display: none;
+    }
+    #filter:hover #filter-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .title-filter_img {
+        display: block;
+        margin-bottom: 5px;
+    }*/
+    .shipping {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+    }
+
+    #btn-filter {
+        display: flex;
+        margin: 5px;
+        margin-right: 20%;
+    }
+
+    .title-label {
+        display: none;
+    }
+
+    .container__holder_item {
+        display: none;
+    }
+
+    .container__holder {
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .icons1 {
+
+        flex-direction: column;
+
+    }
+
+    i {
+        font-size: 30px;
+        color: #000000;
+
+    }
+
+    .contactacn,
+    .politicaprivacidad,
+    .resp {
+        font-size: smaller;
+    }
+}
